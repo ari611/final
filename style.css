@@ -110,7 +110,7 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+/*  justify-content: center;*/
   align-items: center;
   text-align: center;
   overflow: hidden;
@@ -201,18 +201,20 @@ h2 {
 
 #frame2 {
   background-color: #FFEF09;
+  justify-content: center;
 }
 
 
 table, td, th {
-  border: 2px black solid;
+  border: 1px black solid;
 }
 
 table {
     background-color: #fff;
     width: 20rem;
     border-collapse: collapse;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    margin: 20px;
+/*    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
 }
 
 th {
@@ -222,6 +224,11 @@ th {
 
 table tr:nth-child(2) td:first-child {
   padding: 150px 10px 150px 10px;
+}
+
+table tr:nth-child(3) td:first-child {
+  padding: 30px 5px 30px 5px;
+  background-color: #d9d9d9;
 }
 
 * {
@@ -241,84 +248,77 @@ table tr:nth-child(2) td:first-child {
 
 #price {
     color: #FF542C;
+    font-family: Fugaz One;
+    font-size: 1.3em;
 }
 
 #frame3 {
+/*  height: auto;*/
   background-color: #FF54DC;
+  padding: 4em;
   color: white;
-  font-size: 80px; 
-  font-family: Inter; 
-  font-weight: 400; 
+  font-family: Helvetica; 
 }
 
-.endorsed {
-    width: 1705px;
-    height: 233px;
-    left: 159px;
-    top: 176px;
-    position: absolute;
+
+.quotesContainer, img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6em;
+/*    width: 8em;*/
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
+.student {
+    position: relative;
+    font-size: 1.5em;
+    right: 28%;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}
+
+#frame3 p {
+    font-size: 2em;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.suits {
+    display: block;
+    position: absolute;
+    right: 20%;
+}
+
+.suits img{
+    height: 10em;
+}
+
 
 #frame4 {
   background-color: #016FFD;
+  justify-content: center;
+  font-family: Fugaz One;
+  color: #fff;
 }
+
+#frame4 > p{
+    font-size: 8em;
+}
+
 
 h1, h2, p {
   margin: 0;
 }
 
 button {
-  margin: 20px;
+  margin: 30px;
   padding: 10px 20px;
-  font-size: 1.2em;
+  font-size: 4em;
   cursor: pointer;
+  border-radius: 30px;
 }
-
-
-/* Media query for devices with width up to 768 pixels */
-@media (max-width: 768px) {
-  .frame {
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    padding: 20px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in width/height calculations */
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em; /* Adjust text size for paragraphs */
-  }
-
-  button {
-    font-size: 1em; /* Adjust button text size */
-    padding: 15px 25px; /* Larger buttons for touch targets */
-  }
-}
-
-/* Optionally, add another query for even smaller devices */
-@media (max-width: 480px) {
-  .frame {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2, p {
-    font-size: 1em;
-  }
-
-  button {
-    font-size: 0.8em;
-  }
-}
-
 

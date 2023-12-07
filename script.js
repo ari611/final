@@ -3,3 +3,9 @@ const marqueefyList = Array.prototype.slice.call(document.querySelectorAll('.mar
 const marqueefyInstances = marqueefyList.map(m => {
   return new marqueefy.Marqueefy(m)
 })
+
+AOS.init();
+
+function goToHackPage() {
+        window.location.href = 'hack.html';
+    }
