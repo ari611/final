@@ -36,7 +36,7 @@
 	  	</div>
 	  	<div class="Ellipse2"></div>
 	  </div>
-	  <h2>Free Labour</h2>
+	  <h2>No.1 Talent Acquisition Site</h2>
 	  <p class="sale">Sale</p>
 	</div>
 
@@ -74,14 +74,14 @@
 		<div class="column">
 		<table>
   			<tr>
-    			<th>Senior Employees</th>
+    			<th>Eternal Part-time</th>
   			</tr>
   			<tr>
     			<td><i class="fa-solid fa-user-check fa-5x" style="color: #2acb9b;"></i>
     			</td>
   			</tr>
   			<tr>
-    			<td id="price">starting at 10+ years of experience</td>
+    			<td id="price">$999/Month Only</td>
   			</tr>
 		</table>
 	</div>
@@ -92,7 +92,7 @@
 </div>
 
 <div class="frame" id="frame3">
-    <div class="student">student</div>
+    <div class="student">applicant</div>
     	<p class="statement">Every <span class="crossed-out">product</span> is endorsed by 20+ previous employers... yes we have it verified</p>
 
     <div class="quotesContainer">
@@ -128,15 +128,44 @@
 
  </div>
 
+ <div class="frame" id="frame5">
+ 		<p>Easy Hiring with ATS <span id="bracket">(Automatically Trash your resume System)</span></p>
+
+ 		<div class="slidecontainer">
+    
+    	<input type="range" min="0" max="4" value="2" class="slider" id="experience-range" oninput="updateSatisfaction('experience')">
+    	<p>Experience Level: <span id="experience-value">Senior Level</span></p>
+	</div>
+
+	<div class="slidecontainer">
+    	<input type="range" min="5" max="100" value="50" class="slider" id="skills-range" oninput="updateSatisfaction('skills')">
+    	<p>Technical Skills: <span id="skills-value">50+</span></p>
+	</div>
+
+  	<div class="checkbox-container">
+    	<label>
+      <input type="checkbox" id="fake-responsiveness" onclick="updateSatisfaction('checkBox')"> Fake Responsive Employer
+    	</label>
+    	<label>
+      <input type="checkbox" id="spam-college-students" onclick="updateSatisfaction('checkBox')"> Spam College Students
+    	</label>
+  	</div>
+
+  	<div class="recruiter-satisfaction" id="recruiter-satisfaction">😬
+  	</div>
+
+ </div>
+
 <div class="frame" id="frame4">
-  <!-- Content for Frame 4 -->
   <p>Sign Up for the service</p>
   <button onclick="goToHackPage()">Get Started</button>
 </div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@1.0.2/dist/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.3/dist/js/marqueefy.min.js" integrity="sha384-GkNdpzZA0aigYQs7bhB94ikrs1rxyzcoGZqE/KBxsvvsQPERiMHw4vrDlCgDewnu" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/211bc6fd09.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

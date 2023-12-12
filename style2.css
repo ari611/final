@@ -200,3 +200,35 @@ h1:nth-child(3) {
     opacity: 0.25;
   }
 }
+
+.allinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.info1{
+  height: 30vh;
+  color: #fff;
+  line-height: 50px;
+  float: left;
+  padding: 40px 0 0 40px;
+  width: 45%;
+  margin-bottom: 80px;
+}
+
+.info2{
+  height: 30vh;
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  padding: 40px;
+  width: 45%;
+  margin: 50px;
+  /*border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);*/
+}
+
